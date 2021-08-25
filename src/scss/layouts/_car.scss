@@ -4,4 +4,15 @@
     display: flex;
     justify-content: center;
     margin-top: -6.2rem;
+    @include movil {
+        margin-top: -3rem;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+        @include movil {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }

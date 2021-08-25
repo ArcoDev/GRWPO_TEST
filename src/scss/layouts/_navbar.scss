@@ -11,31 +11,66 @@
     width: 15%;
     display: flex;
     justify-content: flex-end;
+
+    @include movil {
+        width: 50%;
+        justify-content: flex-start;
+    }
+
     img {
         position: absolute;
         width: 8%;
         top: -3%;
+        @include movil {
+            width: 35%;
+            height: 20%;
+        }
     }
 }
+
 .links {
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
+
+    @include movil {
+        display: none;
+    }
+
     li a {
         font-size: 11px;
         letter-spacing: 1px;
         color: $gray_black;
         font-weight: 900;
         text-transform: uppercase;
+        transition: .5s ease-in-out;
+
+        &:hover {
+            color: $red;
+        }
     }
+
 }
+
 .menu {
     width: 15%;
+
+    @include movil {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.3rem;
+    }
+
     .nav-mov {
         color: $menu;
         font-size: 16px;
         font-weight: 900;
+
+        @include movil {
+            font-size: 30px;
+        }
     }
 }

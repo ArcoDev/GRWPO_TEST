@@ -24,7 +24,9 @@
     font-family: 700;
     text-transform: uppercase;
     margin-bottom: .755rem;
-
+    @include movil {
+        font-size: 12px;
+    }
     &::after,
     &::before {
         content: "";
@@ -33,6 +35,9 @@
         height: .10rem;
         background: currentColor;
         top: .7em;
+        @include movil {
+            content: none;
+        }
     }
 
     &::after {

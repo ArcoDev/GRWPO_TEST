@@ -10,4 +10,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(-22deg, $red 50%, $blue 50%);
+    @include movil {
+    background: linear-gradient($blue 50%, $red 50%);
+    }
 }
