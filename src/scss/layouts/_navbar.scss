@@ -1,0 +1,41 @@
+.navbar {
+    width: 100%;
+    min-height: 50px;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        position: absolute;
+        width: 8%;
+        top: -3%;
+    }
+}
+.links {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    li a {
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: $gray_black;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+.menu {
+    width: 15%;
+    .nav-mov {
+        color: $menu;
+        font-size: 16px;
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-22deg, #ff0000 50%, #4957d1 50%);
+}
+
+.navbar {
+    width: 100%;
+    min-height: 50px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon img {
+    position: absolute;
+    width: 8%;
+    top: -3%;
+}
+
+.links {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.links li a {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #333333;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.menu {
+    width: 15%;
+}
+
+.menu .nav-mov {
+    color: #cd2f32;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    gap: 1rem;
+}
+
+.header p {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.header h3 {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: .2rem;
+    font-family: 700;
+    text-transform: uppercase;
+    margin-bottom: .755rem;
+}
+
+.header h3::after, .header h3::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: .10rem;
+    background: currentColor;
+    top: .7em;
+}
+
+.header h3::after {
+    left: -6.25rem;
+}
+
+.header h3::before {
+    right: -6.25rem;
+}
+
+.header h2 {
+    font-size: 112px;
+    letter-spacing: -3px;
+    color: #ffffff;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+}
+
+.car {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -6.2rem;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "grwpo_test_christianacosta",
+  "version": "1.0.0",
+  "description": "Prueba para postulacion de desarrollador web, sitio de PSD a HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcoDev/GRWPO.git"
+  },
+  "keywords": [
+    "PSD",
+    "HTML5",
+    "SASS",
+    "GULPJS",
+    "CSS"
+  ],
+  "author": "Christian Osvaldo Acosta Ramírez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArcoDev/GRWPO/issues"
+  },
+  "homepage": "https://github.com/ArcoDev/GRWPO#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "^3.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^4.1.1"
+  }
+}

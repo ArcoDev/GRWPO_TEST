@@ -1,0 +1,28 @@
+@mixin lineTitle {
+    display: inline-block;
+    position: relative;
+    color: $black;
+    font-size: 14px;
+    letter-spacing: .2rem;
+    font-family: 700;
+    text-transform: uppercase;
+    margin-bottom: .755rem;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: .10rem;
+        background: currentColor;
+        top: .7em;
+    }
+
+    &::after {
+        left: -6.25rem;
+    }
+
+    &::before {
+        right: -6.25rem;
+    }
+}
