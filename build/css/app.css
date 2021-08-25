@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -45,6 +49,12 @@ body {
     }
 }
 
+@media (min-width: 768px) {
+    .icon {
+        justify-content: flex-start;
+    }
+}
+
 .icon img {
     position: absolute;
     width: 8%;
@@ -55,6 +65,14 @@ body {
     .icon img {
         width: 35%;
         height: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .icon img {
+        top: 0;
+        width: 15%;
+        height: 10%;
     }
 }
 
@@ -72,6 +90,12 @@ body {
     }
 }
 
+@media (min-width: 768px) {
+    .links {
+        gap: 2rem;
+    }
+}
+
 .links li a {
     font-size: 11px;
     letter-spacing: 1px;
@@ -83,6 +107,12 @@ body {
 
 .links li a:hover {
     color: #ff0000;
+}
+
+@media (min-width: 768px) {
+    .links li a {
+        font-size: 10px;
+    }
 }
 
 .menu {
@@ -98,6 +128,14 @@ body {
     }
 }
 
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.3rem;
+    }
+}
+
 .menu .nav-mov {
     color: #cd2f32;
     font-size: 16px;
@@ -107,6 +145,12 @@ body {
 @media (max-width: 767px) {
     .menu .nav-mov {
         font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu .nav-mov {
+        font-size: 20px;
     }
 }
 
@@ -206,5 +250,12 @@ body {
     .car img {
         width: 100%;
         height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .car img {
+        width: 90%;
+        height: 90%;
     }
 }

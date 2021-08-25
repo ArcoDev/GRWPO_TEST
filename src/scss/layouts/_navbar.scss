@@ -17,13 +17,24 @@
         justify-content: flex-start;
     }
 
+    @include tablet {
+        justify-content: flex-start;
+    }
+
     img {
         position: absolute;
         width: 8%;
         top: -3%;
+
         @include movil {
             width: 35%;
             height: 20%;
+        }
+
+        @include tablet {
+            top: 0;
+            width: 15%;
+            height: 10%;
         }
     }
 }
@@ -39,6 +50,10 @@
         display: none;
     }
 
+    @include tablet {
+        gap: 2rem;
+    }
+
     li a {
         font-size: 11px;
         letter-spacing: 1px;
@@ -49,6 +64,10 @@
 
         &:hover {
             color: $red;
+        }
+
+        @include tablet {
+            font-size: 10px;
         }
     }
 
@@ -64,6 +83,12 @@
         padding-right: 1.3rem;
     }
 
+    @include tablet {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1.3rem;
+    }
+
     .nav-mov {
         color: $menu;
         font-size: 16px;
@@ -71,6 +96,10 @@
 
         @include movil {
             font-size: 30px;
+        }
+
+        @include tablet {
+            font-size: 20px;
         }
     }
 }
