@@ -10,6 +10,7 @@
     img {
         width: 50%;
         height: 50%;
+        z-index: 1;
         @include movil {
             width: 100%;
             height: 100%;

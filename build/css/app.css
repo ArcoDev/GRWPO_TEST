@@ -49,7 +49,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .icon {
         justify-content: flex-start;
     }
@@ -68,7 +68,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .icon img {
         top: 0;
         width: 15%;
@@ -90,7 +90,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .links {
         gap: 2rem;
     }
@@ -109,7 +109,7 @@ body {
     color: #ff0000;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .links li a {
         font-size: 10px;
     }
@@ -128,7 +128,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .menu {
         display: flex;
         justify-content: flex-end;
@@ -148,7 +148,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .menu .nav-mov {
         font-size: 20px;
     }
@@ -244,6 +244,7 @@ body {
 .car img {
     width: 50%;
     height: 50%;
+    z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -253,9 +254,57 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .car img {
         width: 90%;
         height: 90%;
     }
+}
+
+.container-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15rem;
+}
+
+.container-form .form {
+    width: 80%;
+    background: #ffffff;
+    padding: 10rem 5rem 5rem 5rem;
+}
+
+.modelo-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #808080;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 3rem 0 .5rem .5rem;
+}
+
+.col select {
+    border: 1px solid #ff0000;
+    padding: .5rem;
+}
+
+.data-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
 }

@@ -1,0 +1,44 @@
+.container-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -15rem;
+    .form {
+        width: 80%;
+        background: $white;
+        padding: 10rem 5rem 5rem 5rem;
+    }
+}
+
+.modelo-grid {
+    @include gridColumns(2);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 12px;
+        letter-spacing: 2px;
+        color: $gray;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 3rem 0 .5rem .5rem;
+    }
+
+    select {
+        border: 1px solid $red;
+        padding: .5rem;
+    }
+}
+
+.data-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
