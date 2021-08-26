@@ -1,8 +1,7 @@
 ### HOLA MUNDO! 👋
 <hr>
 
- Me nombre es Christian Acosta soy un Desarrollador Web 👩‍💻 <br/>
- :loudspeaker: Y esta es una prueba para el empleo de desarrollador web :computer: <br />
+ :loudspeaker: Esta es una prueba para el empleo de desarrollador web :computer: <br />
  :page_facing_up: Para utlilizar gulp js solo instala las dependencias de nmp con el siguente comando 👇
  ```
   npm install -D
