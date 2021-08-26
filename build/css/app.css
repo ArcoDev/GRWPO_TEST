@@ -52,7 +52,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .icon {
         justify-content: flex-start;
     }
@@ -71,11 +71,12 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .icon img {
-        top: 0;
-        width: 15%;
-        height: 10%;
+        top: -3%;
+        left: -3%;
+        width: 20%;
+        height: 15%;
     }
 }
 
@@ -93,7 +94,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .links {
         gap: 2rem;
     }
@@ -112,7 +113,7 @@ body {
     color: #ff0000;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .links li a {
         font-size: 10px;
     }
@@ -131,7 +132,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .menu {
         display: flex;
         justify-content: flex-end;
@@ -151,7 +152,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .menu .nav-mov {
         font-size: 20px;
     }
@@ -257,7 +258,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .car img {
         width: 90%;
         height: 90%;
@@ -292,7 +293,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .container-form .form {
         width: 90%;
         padding: 7rem 2rem 2rem 2rem;
@@ -415,7 +416,7 @@ body {
     right: -6.25rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .data-info h2 {
         font-size: 40px;
     }
@@ -426,7 +427,7 @@ body {
     top: .75em;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .data-info h2::after, .data-info h2::before {
         width: 5rem;
     }
@@ -436,7 +437,7 @@ body {
     left: -12.8rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .data-info h2::after {
         left: -6.5rem;
     }
@@ -446,7 +447,7 @@ body {
     right: -12.8rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .data-info h2::before {
         right: -6.5rem;
     }
@@ -733,7 +734,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .footer {
         gap: 1rem;
     }
@@ -767,7 +768,7 @@ body {
     text-transform: unset;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .check label {
         font-size: 12px;
     }
