@@ -344,6 +344,7 @@ body {
     color: #000000;
     font-weight: 700;
     outline: none;
+    background: transparent;
 }
 
 .data-info {
@@ -472,6 +473,7 @@ body {
     color: #000000;
     font-weight: 700;
     outline: none;
+    background: transparent;
 }
 
 .data-grid input::placeholder {
@@ -645,6 +647,7 @@ body {
     color: #000000;
     font-weight: 700;
     outline: none;
+    background: transparent;
     padding: .6rem .5rem;
 }
 
