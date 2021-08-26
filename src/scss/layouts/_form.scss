@@ -5,15 +5,29 @@
     align-items: center;
     justify-content: center;
     margin-top: -15rem;
+
+    @include movil {
+        margin-top: -6rem;
+    }
+
     .form {
         width: 80%;
         background: $white;
         padding: 10rem 5rem 5rem 5rem;
+
+        @include movil {
+            width: 100%;
+            padding: 3rem 1rem 1rem 1rem;
+        }
     }
 }
 
-.modelo-grid {
+.model-grid {
     @include gridColumns(2);
+
+    @include movil {
+        @include gridColumns(1);
+    }
 }
 
 .col {
@@ -21,24 +35,178 @@
     flex-direction: column;
 
     label {
-        font-size: 12px;
-        letter-spacing: 2px;
-        color: $gray;
-        font-weight: 400;
-        text-transform: uppercase;
+        @include styleLabel;
         margin: 3rem 0 .5rem .5rem;
+
+        @include movil {
+            margin: 1rem 0 .3rem .3rem;
+        }
     }
 
     select {
-        border: 1px solid $red;
-        padding: .5rem;
+        @include styleInputSelect;
     }
 }
 
 .data-info {
+    @include titleForm;
+}
+
+.data-grid {
+    @include gridColumns(3);
+
+    @include movil {
+        @include gridColumns(1);
+    }
+
+    input {
+        @include styleInputSelect;
+
+        &::placeholder {
+            color: $black;
+        }
+    }
+}
+
+.btn-contact {
+    margin-top: 3.5rem;
+
+    p {
+        @include styleLabel;
+        margin: .5rem 0 .5rem .5rem;
+    }
+
+    .buttons {
+        @include buttons;
+
+        i {
+            margin-right: 1.3rem;
+
+            @include movil {
+                margin: 0 0 .5rem .3rem;
+            }
+        }
+    }
+}
+
+.btn-payment {
+    margin-top: 3.5rem;
+    padding: 0 5rem;
+
+    @include movil {
+        padding: 0;
+    }
+
+    p {
+        @include styleLabel;
+        margin: .5rem 0 .5rem .5rem;
+    }
+
+    .buttons {
+        @include buttons;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .payment-grid {
+        @include gridColumns(2);
+        gap: 1rem;
+
+        @include movil {
+            @include gridColumns(1);
+        }
+
+        input {
+            @include styleInputSelect;
+            padding: .6rem .5rem;
+
+            &::placeholder {
+                color: $black;
+            }
+        }
+    }
+}
+
+.comment-grid {
+    @include gridColumns(1);
+    gap: .5rem;
+    margin-top: 1rem;
+
+    label {
+        @include styleLabel;
+    }
+
+    textarea {
+        padding: .5rem .5rem;
+        border: 1px solid $red;
+        outline: none;
+        text-transform: uppercase;
+
+        &::placeholder {
+            color: $black;
+        }
+
+        min-height: 200px;
+    }
+}
+
+.footer {
+    @include gridColumns(2);
+    margin-top: 3rem;
+}
+
+.check {
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]+label {
+        cursor: pointer;
+    }
+
+    label {
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: unset;
+        &:before {
+            content: "";
+            background: transparent;
+            border: 1px solid $gray;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: .5rem;
+        }
+    }
+
+    input[type="checkbox"]:checked+label:before {
+        content: "✓";
+        color: $gray;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    a {
+        color: $black;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+}
+
+.col-btn {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.btn-send {
+    width: 40%;
+    padding: 1rem .5rem;
+    font-size: 16px;
+    font-weight: 900;
+    color: $black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid $red;
+    background: transparent;
 }

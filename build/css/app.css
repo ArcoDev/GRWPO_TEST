@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,900&display=swap");
@@ -18,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     width: 100%;
     min-height: 100vh;
+    padding-bottom: 5rem;
     background: linear-gradient(-22deg, #ff0000 50%, #4957d1 50%);
 }
 
@@ -270,16 +273,49 @@ body {
     margin-top: -15rem;
 }
 
+@media (max-width: 767px) {
+    .container-form {
+        margin-top: -6rem;
+    }
+}
+
 .container-form .form {
     width: 80%;
     background: #ffffff;
     padding: 10rem 5rem 5rem 5rem;
 }
 
-.modelo-grid {
+@media (max-width: 767px) {
+    .container-form .form {
+        width: 100%;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+}
+
+.model-grid {
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 767px) {
+    .model-grid {
+        gap: .3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .model-grid {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+    .model-grid {
+        gap: .3rem;
+    }
 }
 
 .col {
@@ -296,9 +332,18 @@ body {
     margin: 3rem 0 .5rem .5rem;
 }
 
+@media (max-width: 767px) {
+    .col label {
+        margin: 1rem 0 .3rem .3rem;
+    }
+}
+
 .col select {
     border: 1px solid #ff0000;
     padding: .5rem;
+    color: #000000;
+    font-weight: 700;
+    outline: none;
 }
 
 .data-info {
@@ -307,4 +352,406 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .data-info {
+        margin-top: 1.5rem;
+    }
+}
+
+.data-info h2 {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: .2rem;
+    font-family: 700;
+    text-transform: uppercase;
+    margin-bottom: .755rem;
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+    color: #ff0000;
+    text-transform: unset;
+    font-style: italic;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .data-info h2 {
+        font-size: 12px;
+    }
+}
+
+.data-info h2::after, .data-info h2::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: .10rem;
+    background: currentColor;
+    top: .7em;
+}
+
+@media (max-width: 767px) {
+    .data-info h2::after, .data-info h2::before {
+        content: none;
+    }
+}
+
+.data-info h2::after {
+    left: -6.25rem;
+}
+
+.data-info h2::before {
+    right: -6.25rem;
+}
+
+.data-info h2::after, .data-info h2::before {
+    width: 12rem;
+    top: .75em;
+}
+
+.data-info h2::after {
+    left: -12.8rem;
+}
+
+.data-info h2::before {
+    right: -12.8rem;
+}
+
+@media (max-width: 767px) {
+    .data-info h2 {
+        font-size: 30px;
+    }
+}
+
+.data-info p {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #000000;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .data-info p {
+        font-size: 9.5px;
+    }
+}
+
+.data-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 767px) {
+    .data-grid {
+        gap: .3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .data-grid {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+    .data-grid {
+        gap: .3rem;
+    }
+}
+
+.data-grid input {
+    border: 1px solid #ff0000;
+    padding: .5rem;
+    color: #000000;
+    font-weight: 700;
+    outline: none;
+}
+
+.data-grid input::placeholder {
+    color: #000000;
+}
+
+.btn-contact {
+    margin-top: 3.5rem;
+}
+
+.btn-contact p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #808080;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: .5rem 0 .5rem .5rem;
+}
+
+.btn-contact .buttons {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+@media (max-width: 767px) {
+    .btn-contact .buttons {
+        gap: .3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-contact .buttons {
+        gap: 0;
+    }
+}
+
+.btn-contact .buttons a {
+    border: 1px solid #ff0000;
+    padding: 1rem 4rem;
+    font-size: 12px;
+    color: #333333;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .btn-contact .buttons a {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.btn-contact .buttons a.active {
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.btn-contact .buttons i {
+    margin-right: 1.3rem;
+}
+
+@media (max-width: 767px) {
+    .btn-contact .buttons i {
+        margin: 0 0 .5rem .3rem;
+    }
+}
+
+.btn-payment {
+    margin-top: 3.5rem;
+    padding: 0 5rem;
+}
+
+@media (max-width: 767px) {
+    .btn-payment {
+        padding: 0;
+    }
+}
+
+.btn-payment p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #808080;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: .5rem 0 .5rem .5rem;
+}
+
+.btn-payment .buttons {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 767px) {
+    .btn-payment .buttons {
+        gap: .3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-payment .buttons {
+        gap: 0;
+    }
+}
+
+.btn-payment .buttons a {
+    border: 1px solid #ff0000;
+    padding: 1rem 4rem;
+    font-size: 12px;
+    color: #333333;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .btn-payment .buttons a {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.btn-payment .buttons a.active {
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.btn-payment .payment-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 767px) {
+    .btn-payment .payment-grid {
+        gap: .3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-payment .payment-grid {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+    .btn-payment .payment-grid {
+        gap: .3rem;
+    }
+}
+
+.btn-payment .payment-grid input {
+    border: 1px solid #ff0000;
+    padding: .5rem;
+    color: #000000;
+    font-weight: 700;
+    outline: none;
+    padding: .6rem .5rem;
+}
+
+.btn-payment .payment-grid input::placeholder {
+    color: #000000;
+}
+
+.comment-grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+    .comment-grid {
+        gap: .3rem;
+    }
+}
+
+.comment-grid label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #808080;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.comment-grid textarea {
+    padding: .5rem .5rem;
+    border: 1px solid #ff0000;
+    outline: none;
+    text-transform: uppercase;
+    min-height: 200px;
+}
+
+.comment-grid textarea::placeholder {
+    color: #000000;
+}
+
+.footer {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        gap: .3rem;
+    }
+}
+
+.check input[type="checkbox"] {
+    display: none;
+}
+
+.check input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+.check label {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: unset;
+}
+
+.check label:before {
+    content: "";
+    background: transparent;
+    border: 1px solid #808080;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+.check input[type="checkbox"]:checked + label:before {
+    content: "✓";
+    color: #808080;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.check a {
+    color: #000000;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.col-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn-send {
+    width: 40%;
+    padding: 1rem .5rem;
+    font-size: 16px;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid #ff0000;
+    background: transparent;
 }

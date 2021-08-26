@@ -46,7 +46,7 @@
     <section class="container-form">
         <div class="form">
             <form action="">
-                <div class="modelo-grid">
+                <div class="model-grid">
                     <div class="col col-1">
                         <label for="modelo">Modelo</label>
                         <select name="" id="">
@@ -84,10 +84,96 @@
                     <h2>Datos Personales</h2>
                     <p>Escribe tus datos Personales</p>
                 </div>
+                <div class="data-grid">
+                    <div class="col col-1">
+                        <label for="nombre">Nombre (S)</label>
+                        <input type="text" placeholder="ESCRIBE TU NOMBRE">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="CORREO@EMAIL.COM">
+                    </div>
+                    <div class="col col-2">
+                        <label for="apellido">Apellido paterno</label>
+                        <input type="text" placeholder="ESCRIBE TU APELLIDO">
+                        <label for="tel">TELËFONO</label>
+                        <input type="tel" placeholder="01 . 844 . 439 . 0654">
+                    </div>
+                    <div class="col col-2">
+                        <label for="apellido">Apellido materno</label>
+                        <input type="text" placeholder="ESCRIBE TU APELLIDO">
+                    </div>
+                </div>
+                <div class="btn-contact">
+                    <p>Deseo ser contactado por</p>
+                    <div class="buttons">
+                        <a href="tel:1234567898" class="active">
+                            <i class="fas fa-phone-alt"></i>
+                            Teléfono
+                        </a>
+                        <a href="tel:1234567898">
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </a>
+                        <a href="tel:1234567898">
+                            Ambos
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-payment">
+                    <div class="data-info">
+                        <h2>Forma de pago</h2>
+                        <p>Personaliza tu cotización</p>
+                    </div>
+                    <p>Elije tu tipo de pago</p>
+                    <div class="buttons">
+                        <a href="#">
+                            Contado
+                        </a>
+                        <a href="#" class="active">
+                            Crédito
+                        </a>
+                    </div>
+                    <div class="payment-grid">
+                        <div class="col col-1">
+                            <label for="nombre">Cantidad de enganche</label>
+                            <input type="text" placeholder="00 . 000 . 00">
+                        </div>
+                        <div class="col col-2">
+                            <label for="distribudor">Plazo</label>
+                            <select>
+                                <option value="">72 MESES</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="data-info">
+                        <h2>Comentarios</h2>
+                        <p>Nos importan tus comentarios</p>
+                    </div>
+                </div>
+                <div class="comment-grid">
+                    <label for="comment">¿Dudas? ¿Comentarios?</label>
+                    <textarea placeholder="Escribenos"></textarea>
+                </div>
+                <footer class="footer">
+                    <div class="col col-1">
+                        <div class="check">
+                            <input type="checkbox" id="checkbox1" name="checkbox01" checked>
+                            <label for="checkbox1">He leido y acepto el <a href="#">aviso de provacidad</a></label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="checkbox2" name="checkbox02">
+                            <label for="checkbox1">No dese recibir promociones</label>
+                        </div>
+                    </div>
+                    <div class="col col-btn"">
+                        <button class="btn-send" type="submit">ENVIAR</button>
+                    </div>
+                </footer>
             </form>
         </div>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script src="build/js/app.js"></script>
 </body>
 

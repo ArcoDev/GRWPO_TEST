@@ -4,11 +4,13 @@
         @content;
     }
 }
+
 @mixin tablet {
     @media (max-width: #{$tablet}) {
         @content;
     }
 }
+
 @mixin desktop {
     @media (min-width: #{$desktop}) {
         @content;
@@ -19,6 +21,10 @@
     display: grid;
     gap: 3rem;
     grid-template-columns: repeat($columns, 1fr);
+
+    @include movil {
+        gap: .3rem;
+    }
 }
 
 @mixin lineTitle {
@@ -30,9 +36,11 @@
     font-family: 700;
     text-transform: uppercase;
     margin-bottom: .755rem;
+
     @include movil {
         font-size: 12px;
     }
+
     &::after,
     &::before {
         content: "";
@@ -41,6 +49,7 @@
         height: .10rem;
         background: currentColor;
         top: .7em;
+
         @include movil {
             content: none;
         }
@@ -52,5 +61,107 @@
 
     &::before {
         right: -6.25rem;
+    }
+}
+
+@mixin titleForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    text-align: center;
+
+    @include movil {
+        margin-top: 1.5rem;
+    }
+
+    h2 {
+        @include lineTitle;
+        font-size: 48px;
+        font-family: $playfair;
+        color: $red;
+        text-transform: unset;
+        font-style: italic;
+        margin: 0;
+
+        &::after,
+        &::before {
+            width: 12rem;
+            top: .75em;
+        }
+
+        &::after {
+            left: -12.8rem;
+        }
+
+        &::before {
+            right: -12.8rem;
+        }
+
+        @include movil {
+            font-size: 30px;
+        }
+    }
+
+    p {
+        font-size: 11px;
+        letter-spacing: 5px;
+        color: $black;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        @include movil {
+            font-size: 9.5px;
+        }
+    }
+}
+
+@mixin styleInputSelect {
+    border: 1px solid $red;
+    padding: .5rem;
+    color: $black;
+    font-weight: 700;
+    outline: none;
+}
+
+@mixin styleLabel {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: $gray;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@mixin buttons {
+    @include gridColumns(3);
+    gap: 0;
+
+    @include movil {
+        gap: 0;
+    }
+
+    a {
+        border: 1px solid $red;
+        padding: 1rem 4rem;
+        font-size: 12px;
+        color: $gray_black;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        @include movil {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.active {
+            background: $red;
+            color: $white;
+        }
     }
 }
