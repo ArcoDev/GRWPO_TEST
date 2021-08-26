@@ -130,11 +130,12 @@ body {
 
 .animaMenu {
     transform: unset;
-    top: 7%;
+    top: 1%;
 }
 
 .menu {
     width: 15%;
+    z-index: 3;
 }
 
 @media (max-width: 767px) {
