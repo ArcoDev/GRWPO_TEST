@@ -172,9 +172,7 @@
             justify-content: center;
         }
 
-        @include tablet {
-            padding: 1rem 2rem;
-        }
+        
 
         &.active {
             background: $red;

@@ -564,12 +564,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .btn-contact .buttons a {
-        padding: 1rem 2rem;
-    }
-}
-
 .btn-contact .buttons a.active {
     background: #ff0000;
     color: #ffffff;
@@ -643,12 +637,6 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .btn-payment .buttons a {
-        padding: 1rem 2rem;
     }
 }
 
