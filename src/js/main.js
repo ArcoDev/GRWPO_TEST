@@ -4,9 +4,10 @@ window.addEventListener('DOMContentLoaded', function() {
 
 function navMovil() {
     const menu = document.querySelector('.menu');
+    const links = document.querySelector('.links');
     if(menu) {
         menu.addEventListener('click', function() {
-            alert("Anima menur");
+            links.classList.toggle('animaMenu');
         });
     }
 }
