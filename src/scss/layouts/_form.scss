@@ -19,6 +19,11 @@
             width: 100%;
             padding: 3rem 1rem 1rem 1rem;
         }
+        @include tablet {
+            width: 90%;
+            padding: 7rem 2rem 2rem 2rem;
+
+        }
     }
 }
 
@@ -152,6 +157,9 @@
 .footer {
     @include gridColumns(2);
     margin-top: 3rem;
+    @include tablet {
+        gap: 1rem;
+    }
     @include movil {
         @include gridColumns(1);
     }
@@ -170,6 +178,9 @@
         font-size: 14px;
         letter-spacing: 1px;
         text-transform: unset;
+        @include tablet {
+            font-size: 12px;
+        }
         &:before {
             content: "";
             background: transparent;

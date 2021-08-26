@@ -24,7 +24,7 @@
     img {
         position: absolute;
         width: 8%;
-        top: -3%;
+        top: -2%;
 
         @include movil {
             width: 35%;
@@ -75,7 +75,6 @@
 
 .menu {
     width: 15%;
-
     @include movil {
         width: 50%;
         display: flex;

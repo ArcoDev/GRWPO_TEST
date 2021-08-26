@@ -61,7 +61,7 @@ body {
 .icon img {
     position: absolute;
     width: 8%;
-    top: -3%;
+    top: -2%;
 }
 
 @media (max-width: 767px) {
@@ -162,7 +162,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
     gap: 1rem;
 }
 
@@ -292,6 +292,13 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .container-form .form {
+        width: 90%;
+        padding: 7rem 2rem 2rem 2rem;
+    }
+}
+
 .model-grid {
     display: grid;
     gap: 3rem;
@@ -408,17 +415,41 @@ body {
     right: -6.25rem;
 }
 
+@media (max-width: 768px) {
+    .data-info h2 {
+        font-size: 40px;
+    }
+}
+
 .data-info h2::after, .data-info h2::before {
     width: 12rem;
     top: .75em;
+}
+
+@media (max-width: 768px) {
+    .data-info h2::after, .data-info h2::before {
+        width: 5rem;
+    }
 }
 
 .data-info h2::after {
     left: -12.8rem;
 }
 
+@media (max-width: 768px) {
+    .data-info h2::after {
+        left: -6.5rem;
+    }
+}
+
 .data-info h2::before {
     right: -12.8rem;
+}
+
+@media (max-width: 768px) {
+    .data-info h2::before {
+        right: -6.5rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -533,6 +564,12 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .btn-contact .buttons a {
+        padding: 1rem 2rem;
+    }
+}
+
 .btn-contact .buttons a.active {
     background: #ff0000;
     color: #ffffff;
@@ -606,6 +643,12 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-payment .buttons a {
+        padding: 1rem 2rem;
     }
 }
 
@@ -702,6 +745,12 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .footer {
+        gap: 1rem;
+    }
+}
+
 @media (max-width: 767px) {
     .footer {
         display: grid;
@@ -728,6 +777,12 @@ body {
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: unset;
+}
+
+@media (max-width: 768px) {
+    .check label {
+        font-size: 12px;
+    }
 }
 
 .check label:before {

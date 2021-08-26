@@ -84,19 +84,31 @@
         text-transform: unset;
         font-style: italic;
         margin: 0;
+        @include tablet { 
+            font-size: 40px;
+        }
 
         &::after,
         &::before {
             width: 12rem;
             top: .75em;
+            @include tablet {
+                width: 5rem;
+            }
         }
 
         &::after {
             left: -12.8rem;
+            @include tablet {
+                left: -6.5rem;
+            }
         }
 
         &::before {
             right: -12.8rem;
+            @include tablet {
+                right: -6.5rem;
+            }
         }
 
         @include movil {
@@ -158,6 +170,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+
+        @include tablet {
+            padding: 1rem 2rem;
         }
 
         &.active {
