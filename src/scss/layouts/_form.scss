@@ -152,6 +152,9 @@
 .footer {
     @include gridColumns(2);
     margin-top: 3rem;
+    @include movil {
+        @include gridColumns(1);
+    }
 }
 
 .check {
@@ -198,6 +201,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    @include movil {
+        justify-content: center;
+    }
 }
 .btn-send {
     width: 40%;
@@ -209,4 +215,14 @@
     letter-spacing: 5px;
     border: 1px solid $red;
     background: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    &:hover {
+        transform: scale(1.03);
+        background: $red;
+        color: $white;
+    }
+    @include movil {
+        margin: 2rem;
+    }
 }

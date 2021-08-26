@@ -699,6 +699,20 @@ body {
     }
 }
 
+@media (max-width: 767px) {
+    .footer {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 767px) and (max-width: 767px) {
+    .footer {
+        gap: .3rem;
+    }
+}
+
 .check input[type="checkbox"] {
     display: none;
 }
@@ -744,6 +758,12 @@ body {
     justify-content: flex-end;
 }
 
+@media (max-width: 767px) {
+    .col-btn {
+        justify-content: center;
+    }
+}
+
 .btn-send {
     width: 40%;
     padding: 1rem .5rem;
@@ -754,4 +774,18 @@ body {
     letter-spacing: 5px;
     border: 1px solid #ff0000;
     background: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.btn-send:hover {
+    transform: scale(1.03);
+    background: #ff0000;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .btn-send {
+        margin: 2rem;
+    }
 }
